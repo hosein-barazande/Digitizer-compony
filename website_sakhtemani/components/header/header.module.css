@@ -1,0 +1,84 @@
+
+.navbar {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    height: max-content;
+    background-image: url("/menu/blackMarbel.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+.contact-us a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu {
+    display: inherit;
+}
+
+.cube-link {
+    text-decoration: none;
+    color: #333;
+    perspective: 1000px;
+}
+
+.cube {
+    width: 100px;
+    height: 59px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cube-link:hover .cube {
+    transform: rotateX(90deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ffd700, #daa520, #b8860b) 1;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+.front {
+    background-color: #00000055;
+    transform: rotateX(0deg) translateZ(25px);
+}
+
+.back {
+    background-image: url("/menu/whiteMarbel.jpg");
+    background-size: contain;
+    transform: rotateX(-90deg) translateZ(25px);
+    color: #000;
+}
+.logo{
+    display: inherit;
+    width: 15%;
+    height: max-content;
+}
+.logo img {
+    height: 60px;
+}
+.contact-us{
+    display: inherit;
+    width: 200px;
+    height: 60px;
+}

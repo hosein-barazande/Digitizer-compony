@@ -1,0 +1,119 @@
+.about-container{
+  display: block;
+  width: 90vw;
+  min-height: 75vw;
+  height: max-content;
+  margin: 20px auto 20px auto;
+  background: #fff; 
+  position: relative;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+.about-container::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 4px; 
+  border-radius: 10px;
+  background: linear-gradient(45deg, #FFD700, #FFA500, #FFCC00);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 5;
+}
+.about-container .titr{
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.about-container .titr::after{
+    content: "";
+    width: 150px;
+    height: 4px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, gold, orange, #fc0);
+    position: absolute;
+    top: 60px;
+    right: 44%;
+}
+.about-container .description{
+  text-align: justify;
+}
+.team-member-titr-contaner{
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  height: max-content;
+}
+.team-member-titr-contaner h2{
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.team-member-titr-contaner h2::after{
+  content: "";
+  width: 150px;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, gold, orange, #fc0);
+  position: absolute;
+  top: 55px;
+  right: 44%;
+}
+.team-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-member{
+  display: block;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  margin: 10px 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.team-member:hover{
+ transform: scale(1.1);
+}
+.team-member::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 4px; 
+  border-radius: 10px;
+  background: linear-gradient(45deg, #FFD700, #FFA500, #FFCC00);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 5;
+}
+.team-member .persen-img{
+  width: 100%;
+  height: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+.social-links{
+  display: flex;
+  width: 60%;
+  min-height: 100px;
+  height: max-content;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.social-links a .icon{
+  width: 40px;
+  height: auto;
+}

@@ -1,0 +1,57 @@
+
+
+.btnContainer {
+    perspective: 800px;
+    
+}
+.btnCuboid {
+    display: block;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    top: 5px;
+    right: 4px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.4s ease;
+}
+.faceBtn {
+    display: block;
+    width: 200px;
+    height: 60px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ffd700, #daa520, #b8860b) 1;
+}
+.frontBtn { transform: rotateY(  0deg) translateZ(100px); 
+    display: block;   
+    width: 200px;
+    height: 51px;
+    background-image: url("/menu/blackMarbel.jpg");
+    background-size: contain;
+}
+.frontBtn p{
+    text-align: center;
+    color: #fff;
+    text-shadow:1px 1px 2px #000 ;
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.leftBtn   { 
+    transform: rotateY(-90deg) translateZ(100px) translateY(-50px);
+    display: block;
+    width: 200px;
+    height: 51px; 
+    background-image: url("/menu/whiteMarbel.jpg");
+    background-size: contain;
+}
+.leftBtn p{
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.btnContainer:hover .btnCuboid {
+    transform: rotateY(90deg);
+}

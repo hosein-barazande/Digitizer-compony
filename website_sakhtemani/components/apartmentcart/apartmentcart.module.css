@@ -1,0 +1,115 @@
+.apartemensCart{
+    display: block;
+    width: 300px;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #ffd700, #daa520, #b8860b) 1;
+}
+.apartemensCart .apartemensCellingType{
+    background-color: #ffd700dd;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    right: 7px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    border-radius: 6px;
+    z-index: 2;
+}
+.apartemensCart a img{
+    width: 100%;
+    height: max-content;
+    transition: 1s;
+}
+.apartemensCart:hover .apartemensCartImg{
+    transform: scale(1.2);
+    transition: 2s;
+    transform-origin: center;
+}
+.apartemensInfo{
+    display: block;
+    width: 100%;
+    height: 240px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+}
+.buildingType{
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    top: -15px;
+    text-align: center;
+    line-height: 30px;
+    left: 10px;
+    border-radius: 6px;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+}
+.projectName{
+    display: block;
+    width: 100%;
+    height: max-content;
+    color: #daa520;
+    text-align: center;
+    margin-top: 30px;
+}
+.projectAdress{
+    display: block;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+.Facilities{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: -10px;
+    border-top: 1px dashed #000;
+}
+.area,.bed{
+    border-left: 1px dashed #000;
+}
+.area,.bed,.bath{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+}
+.areaIcon{
+    background-image: url(../img/icon/maximize.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 20px;
+    width: 20px;
+}
+.bedIcon{
+    background-image: url(../img/icon/bed.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 20px;
+    width: 20px;
+}
+.bathIcon{
+    background-image: url(../img/icon/bath-tub.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 20px;
+    width: 20px;
+}
